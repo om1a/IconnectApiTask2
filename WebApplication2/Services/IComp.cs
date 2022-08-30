@@ -7,7 +7,7 @@ namespace WebApplication2.Services
         Task<List<Comp>> GetComp();
         Task<Comp> GetById(int id);
         Task<List<Comp>> CreateComp(Comp newComp);
-        Task<List<Comp>> UpdateComp(Comp updateComp);
+        Task<Comp> UpdateComp(Comp updateComp);
         Task<List<Comp>> DeleteComp(int id);
 
     }

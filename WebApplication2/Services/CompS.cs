@@ -44,14 +44,14 @@ namespace WebApplication2.Services
         /**/
         /**/
 
-        public async Task<List<Comp>> UpdateComp(Comp updateComp)
+        public async Task<Comp> UpdateComp(Comp updateComp)
         {
             Comp tG = Company.First(x => x.Id == updateComp.Id);
             tG.Name = updateComp.Name;
             tG.Location = updateComp.Location;
             tG.Id = updateComp.Id;
 
-            return Company;
+            return tG;
         }
     }
 

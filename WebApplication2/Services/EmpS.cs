@@ -42,7 +42,7 @@ namespace WebApplication2.Services
             return (Empp.First(x => x.Id == id));
         }
 
-        public async Task<List<Emp>> UpdateEmp(Emp updateEmp)
+        public async Task<Emp> UpdateEmp(Emp updateEmp)
         {
             Emp Emplo = Empp.First(x => x.Id == updateEmp.Id);
             Emplo.Id= updateEmp.Id;
@@ -50,7 +50,7 @@ namespace WebApplication2.Services
             Emplo.Age = updateEmp.Age;
             Emplo.CompId = updateEmp.CompId;
 
-            return Empp;
+            return Emplo;
         }
     }
 }
